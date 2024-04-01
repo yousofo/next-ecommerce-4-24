@@ -1,33 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.landing .swiper {
+  height: 100%;
+}
+.landing .swiper .swiper-slide {
+  height: 100%;
+  overflow: hidden;
+}
+.landing .swiper .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.swiper {
+  height: 100%;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.landing-section-swiper .swiper-button-prev{
+  /* #2e3331 */
+  color:#2e3331 ;
+  margin-left: 10px;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.landing-section-swiper .swiper-button-next{
+  /* #2e3331 */
+  color:#2e3331 ;
+  margin-right: 10px;
 }
